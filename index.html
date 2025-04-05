@@ -8,59 +8,48 @@
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
-  <div class="flex-col min-h-screen">
+  <div class="wrapper">
     <!-- Header -->
-    <header class="border-b sticky top-0 z-10 bg-primary text-white">
-      <div class="container flex h-16 items-center justify-between px-4 md-px-6">
-        <div class="flex items-center gap-2">
-          <i class="ri-scales-3-line h-6 w-6 text-white"></i>
-          <span class="text-xl font-bold">Johnson & Asociados</span>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <i class="ri-scales-3-line"></i>
+          <span>Johnson & Asociados</span>
         </div>
-        <nav class="hidden md-flex gap-6">
-          <a href="#services" class="text-sm font-medium text-white hover-underline underline-offset-4">
-            Servicios
-          </a>
-          <a href="#about" class="text-sm font-medium text-white hover-underline underline-offset-4">
-            Sobre Nosotros
-          </a>
-          <a href="#attorneys" class="text-sm font-medium text-white hover-underline underline-offset-4">
-            Nuestros Abogados
-          </a>
-          <a href="#contact" class="text-sm font-medium text-white hover-underline underline-offset-4">
-            Contacto
-          </a>
+        <nav class="main-nav">
+          <a href="#services">Servicios</a>
+          <a href="#about">Sobre Nosotros</a>
+          <a href="#attorneys">Nuestros Abogados</a>
+          <a href="#contact">Contacto</a>
         </nav>
-        <a href="#contact" class="button hidden md-inline-flex bg-white text-primary hover-bg-gray-100">Consulta Gratuita</a>
-        <button class="button-outline md-hidden border-white text-white hover-bg-primary-light">
-          <i class="ri-arrow-right-s-line h-4 w-4"></i>
+        <a href="#contact" class="btn btn-white">Consulta Gratuita</a>
+        <button class="menu-toggle">
+          <i class="ri-menu-line"></i>
           <span class="sr-only">Menú</span>
         </button>
       </div>
     </header>
 
-    <main class="flex-1">
+    <main>
       <!-- Hero Section -->
-      <section class="w-full py-12 md-py-24 lg-py-32 bg-gray-100">
-        <div class="container px-4 md-px-6">
-          <div class="grid gap-6 lg-grid-cols-2 lg-gap-12 items-center">
-            <div class="space-y-4">
-              <h1 class="text-3xl font-bold tracking-tighter sm-text-4xl md-text-5xl">
-                Representación Legal Experta en la que Puede Confiar
-              </h1>
-              <p class="text-gray-500 md-text-xl lg-text-base xl-text-xl">
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-text">
+              <h1>Representación Legal Experta en la que Puede Confiar</h1>
+              <p>
                 Con más de 25 años de experiencia, nuestro equipo de abogados dedicados está comprometido a
                 proporcionar servicios legales excepcionales y lograr los mejores resultados posibles para nuestros
                 clientes.
               </p>
-              <div class="flex flex-col gap-2 min-400-flex-row">
-                <a href="#contact" class="button button-lg">Programar una Consulta</a>
+              <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">Programar una Consulta</a>
               </div>
             </div>
-            <div class="mx-auto aspect-video overflow-hidden rounded-xl object-cover">
+            <div class="hero-image">
               <img
                 src="https://www.aliatuniversidades.com.mx/hubfs/carrera-de-abogado.jpeg"
                 alt="Abogados profesionales en una sala de tribunal"
-                class="rounded-xl object-cover w-full h-full"
               />
             </div>
           </div>
@@ -68,156 +57,135 @@
       </section>
 
       <!-- Services Section -->
-      <section id="services" class="w-full py-12 md-py-24 lg-py-32">
-        <div class="container px-4 md-px-6">
-          <div class="flex flex-col items-center justify-center space-y-4 text-center">
-            <div class="space-y-2">
-              <h2 class="text-3xl font-bold tracking-tighter sm-text-4xl md-text-5xl">
-                Nuestras Áreas de Práctica
-              </h2>
-              <p class="max-w-900 text-gray-500 md-text-xl lg-text-base xl-text-xl">
-                Ofrecemos servicios legales integrales en una amplia gama de áreas de práctica para satisfacer todas
-                sus necesidades legales.
+      <section id="services" class="services">
+        <div class="container">
+          <div class="section-header">
+            <h2>Nuestras Áreas de Práctica</h2>
+            <p>
+              Ofrecemos servicios legales integrales en una amplia gama de áreas de práctica para satisfacer todas
+              sus necesidades legales.
+            </p>
+          </div>
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="ri-building-line"></i>
+              </div>
+              <h3>Derecho Corporativo</h3>
+              <p>
+                Orientación experta para empresas de todos los tamaños en formación, cumplimiento y transacciones.
               </p>
             </div>
-          </div>
-          <div class="mx-auto grid max-w-5xl items-center gap-6 py-12 lg-grid-cols-3 lg-gap-12">
-            <div class="card text-center p-6">
-              <div class="card-content pt-6">
-                <div class="flex justify-center">
-                  <i class="ri-building-line h-16 w-16 mb-4 text-gray-800"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-2">Derecho Corporativo</h3>
-                <p class="text-gray-500">
-                  Orientación experta para empresas de todos los tamaños en formación, cumplimiento y transacciones.
-                </p>
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="ri-briefcase-line"></i>
               </div>
+              <h3>Litigios</h3>
+              <p>
+                Representación hábil en tribunales tanto para demandantes como para demandados en diversos conflictos.
+              </p>
             </div>
-            <div class="card text-center p-6">
-              <div class="card-content pt-6">
-                <div class="flex justify-center">
-                  <i class="ri-briefcase-line h-16 w-16 mb-4 text-gray-800"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-2">Litigios</h3>
-                <p class="text-gray-500">
-                  Representación hábil en tribunales tanto para demandantes como para demandados en diversos conflictos.
-                </p>
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="ri-team-line"></i>
               </div>
-            </div>
-            <div class="card text-center p-6">
-              <div class="card-content pt-6">
-                <div class="flex justify-center">
-                  <i class="ri-team-line h-16 w-16 mb-4 text-gray-800"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-2">Derecho Familiar</h3>
-                <p class="text-gray-500">
-                  Asesoramiento compasivo para divorcios, custodia y otros asuntos legales relacionados con la familia.
-                </p>
-              </div>
+              <h3>Derecho Familiar</h3>
+              <p>
+                Asesoramiento compasivo para divorcios, custodia y otros asuntos legales relacionados con la familia.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
       <!-- About Section -->
-      <section id="about" class="w-full py-12 md-py-24 lg-py-32 bg-gray-100">
-        <div class="container px-4 md-px-6">
-          <div class="grid gap-6 lg-grid-cols-2 lg-gap-12 items-center">
-            <div class="mx-auto aspect-video overflow-hidden rounded-xl object-cover">
+      <section id="about" class="about">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-image">
               <img
                 src="https://comercioyjusticia.info/wp-content/uploads/2022/07/abogado-1.jpg"
                 alt="Abogado profesional en su oficina"
-                class="rounded-xl object-cover w-full h-full"
               />
             </div>
-            <div class="space-y-4">
-              <h2 class="text-3xl font-bold tracking-tighter sm-text-4xl">Sobre Nuestra Firma</h2>
-              <p class="text-gray-500 md-text-xl lg-text-base">
+            <div class="about-text">
+              <h2>Sobre Nuestra Firma</h2>
+              <p>
                 Fundada en 1995, Johnson & Asociados ha crecido hasta convertirse en uno de los bufetes de abogados
                 más respetados de la región. Nuestro equipo de abogados experimentados está dedicado a proporcionar
                 servicios legales personalizados con integridad y excelencia.
               </p>
-              <p class="text-gray-500 md-text-xl lg-text-base">
+              <p>
                 Nos enorgullecemos de nuestro compromiso con nuestros clientes, nuestra participación en la comunidad
                 y nuestro historial de resultados exitosos incluso en los asuntos legales más complejos.
               </p>
-              <button class="button">Conoce a Nuestro Equipo</button>
+              <button class="btn btn-primary">Conoce a Nuestro Equipo</button>
             </div>
           </div>
         </div>
       </section>
 
       <!-- Contact Section -->
-      <section id="contact" class="w-full py-12 md-py-24 lg-py-32 bg-gray-100">
-        <div class="container px-4 md-px-6">
-          <div class="flex flex-col items-center justify-center space-y-4 text-center">
-            <div class="space-y-2">
-              <h2 class="text-3xl font-bold tracking-tighter sm-text-4xl md-text-5xl">Contáctenos</h2>
-              <p class="max-w-900 text-gray-500 md-text-xl lg-text-base xl-text-xl">
-                ¿Tiene una pregunta legal o necesita representación? Póngase en contacto con nuestro equipo hoy.
-              </p>
-            </div>
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="section-header">
+            <h2>Contáctenos</h2>
+            <p>
+              ¿Tiene una pregunta legal o necesita representación? Póngase en contacto con nuestro equipo hoy.
+            </p>
           </div>
-          <div class="mx-auto grid max-w-5xl items-center gap-6 py-12 lg-grid-cols-2 lg-gap-12">
-            <div class="space-y-6">
+          <div class="contact-grid">
+            <div class="contact-location">
               <div class="card">
-                <div class="card-content p-6">
-                  <div class="flex items-center gap-4 mb-4">
-                    <i class="ri-map-pin-line h-8 w-8 text-primary"></i>
-                    <h3 class="text-xl font-bold">Nuestra Ubicación</h3>
-                  </div>
-                  <p class="text-gray-600 mb-4">
-                    Av. Corrientes 1234, Piso 5, Oficina B<br />
-                    Ciudad Autónoma de Buenos Aires<br />
-                    Argentina, C1043AAZ
-                  </p>
-                  <div class="aspect-video w-full h-200 bg-gray-200 rounded-md overflow-hidden">
-                    <iframe 
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0168878895223!2d-58.38414532346177!3d-34.60373445749376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sAv.%20Corrientes%201234%2C%20C1043AAZ%20CABA!5e0!3m2!1ses!2sar!4v1712181867!5m2!1ses!2sar" 
-                      width="100%" 
-                      height="100%" 
-                      style="border: 0;" 
-                      allowfullscreen 
-                      loading="lazy" 
-                      referrerpolicy="no-referrer-when-downgrade"
-                      title="Ubicación de Johnson & Asociados"
-                    ></iframe>
-                  </div>
+                <div class="location-header">
+                  <i class="ri-map-pin-line"></i>
+                  <h3>Nuestra Ubicación</h3>
+                </div>
+                <p>
+                  Av. Corrientes 1234, Piso 5, Oficina B<br />
+                  Ciudad Autónoma de Buenos Aires<br />
+                  Argentina, C1043AAZ
+                </p>
+                <div class="map-container">
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0168878895223!2d-58.38414532346177!3d-34.60373445749376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sAv.%20Corrientes%201234%2C%20C1043AAZ%20CABA!5e0!3m2!1ses!2sar!4v1712181867!5m2!1ses!2sar" 
+                    width="100%" 
+                    height="100%" 
+                    style="border: 0;" 
+                    allowfullscreen 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Ubicación de Johnson & Asociados"
+                  ></iframe>
                 </div>
               </div>
             </div>
-            <div class="space-y-6">
+            <div class="contact-info">
               <div class="card">
-                <div class="card-content p-6">
-                  <h3 class="text-xl font-bold mb-4">Horario de Oficina</h3>
-                  <div class="space-y-2 mb-6">
-                    <div class="flex justify-between">
-                      <span>Lunes - Viernes</span>
-                      <span>9:00 AM - 6:00 PM</span>
-                    </div>
-                    <div class="flex justify-between">
-                      <span>Sábado</span>
-                      <span>10:00 AM - 2:00 PM</span>
-                    </div>
-                    <div class="flex justify-between">
-                      <span>Domingo</span>
-                      <span>Cerrado</span>
-                    </div>
+                <h3>Horario de Oficina</h3>
+                <div class="office-hours">
+                  <div class="hours-row">
+                    <span>Lunes - Viernes</span>
+                    <span>9:00 AM - 6:00 PM</span>
                   </div>
-                  <div class="space-y-4 pt-4 border-t">
-                    <h3 class="text-xl font-bold">Información de Contacto</h3>
-                    <div class="flex items-center gap-3">
-                      <i class="ri-phone-line h-5 w-5 text-primary"></i>
-                      <a href="tel:+15551234567" class="text-gray-700 hover-text-primary">
-                        (555) 123-4567
-                      </a>
-                    </div>
-                    <div class="flex items-center gap-3">
-                      <i class="ri-message-2-line h-5 w-5 text-primary"></i>
-                      <a href="https://wa.me/15551234567" class="text-gray-700 hover-text-primary">
-                        WhatsApp: (555) 123-4567
-                      </a>
-                    </div>
+                  <div class="hours-row">
+                    <span>Sábado</span>
+                    <span>10:00 AM - 2:00 PM</span>
+                  </div>
+                  <div class="hours-row">
+                    <span>Domingo</span>
+                    <span>Cerrado</span>
+                  </div>
+                </div>
+                <div class="contact-details">
+                  <h3>Información de Contacto</h3>
+                  <div class="contact-item">
+                    <i class="ri-phone-line"></i>
+                    <a href="tel:+15551234567">(555) 123-4567</a>
+                  </div>
+                  <div class="contact-item">
+                    <i class="ri-message-2-line"></i>
+                    <a href="https://wa.me/15551234567">WhatsApp: (555) 123-4567</a>
                   </div>
                 </div>
               </div>
@@ -227,55 +195,41 @@
       </section>
     </main>
 
-    <!-- Footer with contact information -->
-    <footer class="w-full border-t bg-gray-900 text-white">
-      <div class="container px-4 md-px-6 py-12">
-        <div class="grid gap-8 lg-grid-cols-3">
-          <div>
-            <div class="flex items-center gap-2 mb-4">
-              <i class="ri-scales-3-line h-6 w-6"></i>
-              <span class="text-xl font-bold">Johnson & Asociados</span>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-about">
+            <div class="footer-logo">
+              <i class="ri-scales-3-line"></i>
+              <span>Johnson & Asociados</span>
             </div>
-            <p class="text-gray-400 max-w-xs">
+            <p>
               Proporcionando servicios legales excepcionales con integridad y dedicación desde 1995.
             </p>
           </div>
-          <div>
-            <h3 class="text-lg font-semibold mb-4">Enlaces Rápidos</h3>
-            <nav class="flex flex-col gap-2">
-              <a href="#services" class="text-gray-400 hover-text-white">
-                Servicios
-              </a>
-              <a href="#about" class="text-gray-400 hover-text-white">
-                Sobre Nosotros
-              </a>
-              <a href="#attorneys" class="text-gray-400 hover-text-white">
-                Nuestros Abogados
-              </a>
-              <a href="#contact" class="text-gray-400 hover-text-white">
-                Contacto
-              </a>
+          <div class="footer-links">
+            <h3>Enlaces Rápidos</h3>
+            <nav>
+              <a href="#services">Servicios</a>
+              <a href="#about">Sobre Nosotros</a>
+              <a href="#attorneys">Nuestros Abogados</a>
+              <a href="#contact">Contacto</a>
             </nav>
           </div>
-          <div>
-            <h3 class="text-lg font-semibold mb-4">Información de Contacto</h3>
-            <div class="space-y-4">
-              <div class="flex items-center gap-2">
-                <i class="ri-phone-line h-5 w-5 text-gray-400"></i>
-                <a href="tel:+15551234567" class="text-gray-400 hover-text-white">
-                  (555) 123-4567
-                </a>
-              </div>
-              <div class="flex items-center gap-2">
-                <i class="ri-message-2-line h-5 w-5 text-gray-400"></i>
-                <a href="https://wa.me/15551234567" class="text-gray-400 hover-text-white">
-                  WhatsApp: (555) 123-4567
-                </a>
-              </div>
+          <div class="footer-contact">
+            <h3>Información de Contacto</h3>
+            <div class="footer-contact-item">
+              <i class="ri-phone-line"></i>
+              <a href="tel:+15551234567">(555) 123-4567</a>
+            </div>
+            <div class="footer-contact-item">
+              <i class="ri-message-2-line"></i>
+              <a href="https://wa.me/15551234567">WhatsApp: (555) 123-4567</a>
             </div>
           </div>
         </div>
-        <div class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400">
+        <div class="footer-bottom">
           <p>
             &copy; <script>document.write(new Date().getFullYear())</script> Johnson & Asociados Bufete de Abogados. Todos los derechos reservados.
           </p>
