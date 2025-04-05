@@ -149,6 +149,10 @@ img {
   width: 2.5rem;
 }
 
+.w-16 {
+  width: 4rem;
+}
+
 .max-w-xs {
   max-width: 20rem;
 }
@@ -538,4 +542,6 @@ img {
     font-size: 1.25rem;
   }
 }
+
+
 
